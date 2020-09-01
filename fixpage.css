@@ -339,6 +339,10 @@ main .top-area .img-box + p {
   letter-spacing: 0.8px;
 }
 
+main .top-area .img-box.pattern4-top {
+  width: 50%;
+}
+
 main .top-area .tag-category {
   padding: 15px;
   font-size: 2rem;
@@ -483,9 +487,10 @@ main .contents-area p {
 }
 
 main .contents-area p.sav-taitle {
-  font-size: 3.4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   color: #0065A9;
-  margin: 0 0 50px 0;
+  margin: 0 0 20px 0;
 }
 
 main .contents-area p.small-taitle {
@@ -950,6 +955,27 @@ main .contents-area .case-box .link-box {
   margin: 0 auto;
 }
 
+main .contents-area .example-block {
+  margin: 0 auto;
+}
+
+main .contents-area .example-block p {
+  text-align: center;
+  margin: 15px 0 !important;
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+
+main .contents-area .example-block .example-text {
+  padding: 30px 10%;
+  width: 100%;
+  margin: 0 auto !important;
+  background: #F8FCFD;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: left;
+}
+
 main .btn-area {
   position: relative;
   padding: 0 0 60px;
@@ -1068,8 +1094,108 @@ main .btn-area .btn-block .btn-step {
   display: none;
 }
 
+main .pc-column2-block ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .pc-column2-block ul li {
+  position: relative;
+  margin: 0 0 50px 0;
+  padding: 30px;
+  background-color: #F8FCFD;
+}
+
+main .pc-column2-block ul li .inner-box {
+  overflow: hidden;
+}
+
+main .pc-column2-block ul li .inner-box .img-box {
+  width: 100%;
+  height: auto;
+  margin: 0 0 40px 0;
+  border-radius: 25px;
+}
+
+main .pc-column2-block ul li .inner-box .txt-box {
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+main .pc-column2-block ul li .inner-box .txt-box h4 {
+  font-size: 3.4rem;
+  color: #0065A9;
+  margin: 0 0 10px 0;
+}
+
+main .pc-column2-block ul li .inner-box .txt-box p {
+  font-size: 1.4rem;
+}
+
+main .pc-column2-block ul li .inner-box .btn-detail a {
+  position: relative;
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  background: #0065a9;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: Yu Gothic, Arial, Helvetica, sans-serif;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 15px 25px;
+  line-height: 1;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+main .pc-column2-block ul li .inner-box .btn-detail a::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-top: solid 4px #ffffff;
+  border-right: solid 4px #ffffff;
+  border-radius: 1px;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  margin-top: -6px;
+  transform: rotate(45deg);
+}
+
+main .pc-column2-block ul li .inner-box .btn-detail a:hover {
+  -webkit-transform: translate(0, 3px);
+  transform: translate(0, 3px);
+}
+
+main .pc-column2-block ul li:last-of-type {
+  margin: 0;
+}
+
+main .pc-column2-block ul li:last-of-type::after {
+  content: none;
+}
+
 main .LinkIconArea {
   background-color: #ffffff;
+}
+
+dl dd p.movie-text {
+  font-weight: normal;
+}
+
+.mt30 {
+  margin-top: 10px !important;
+}
+
+.mt120 {
+  margin-top: 70px !important;
+}
+
+.tc {
+  text-align: center !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -1233,6 +1359,10 @@ main .LinkIconArea {
     letter-spacing: 1.3px;
     clear: both;
   }
+  main .top-area .img-box.pattern4-top {
+    width: 272px;
+    height: 350px;
+  }
   main .top-area .tag-category {
     padding: 15px;
     font-size: 3rem;
@@ -1318,6 +1448,9 @@ main .LinkIconArea {
   }
   main .contents-area p {
     font-size: 2rem;
+  }
+  main .contents-area .h3-box h3 {
+    font-size: 3rem;
   }
   main .contents-area .process-block ul li {
     position: relative;
@@ -1465,6 +1598,15 @@ main .LinkIconArea {
     margin: 0 75px 0 0;
     float: left;
   }
+  main .contents-area.sav-taitle {
+    font-size: 3.4rem;
+    margin: 0 0 50px 0;
+  }
+  main .contents-area .example-block .example-text {
+    padding: 70px 110px;
+    width: 750px;
+    font-size: 1.7rem;
+  }
   main .btn-area {
     width: 1200px;
     background: #fff;
@@ -1539,11 +1681,13 @@ main .LinkIconArea {
     background-size: 40px;
     border: #ffffff 5px solid;
   }
-  main .btn-area .btn-block .btn-step {
+  main .btn-area .btn-block .btn-step-r,
+  main .btn-area .btn-block .btn-step-l {
     display: block;
-    margin: 0 0 0 630px;
+    margin: 0;
   }
-  main .btn-area .btn-block .btn-step a {
+  main .btn-area .btn-block .btn-step-r a,
+  main .btn-area .btn-block .btn-step-l a {
     position: relative;
     display: block;
     width: 320px;
@@ -1558,17 +1702,20 @@ main .LinkIconArea {
     line-height: 1;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   }
-  main .btn-area .btn-block .btn-step a p {
+  main .btn-area .btn-block .btn-step-r a p,
+  main .btn-area .btn-block .btn-step-l a p {
     width: 230px;
     margin: 0;
     line-height: 1.3;
   }
-  main .btn-area .btn-block .btn-step a span {
+  main .btn-area .btn-block .btn-step-r a span,
+  main .btn-area .btn-block .btn-step-l a span {
     display: block;
     font-size: 1.4rem;
     letter-spacing: 2.1px;
   }
-  main .btn-area .btn-block .btn-step a::after {
+  main .btn-area .btn-block .btn-step-r a::after,
+  main .btn-area .btn-block .btn-step-l a::after {
     display: block;
     content: "";
     position: absolute;
@@ -1586,7 +1733,79 @@ main .LinkIconArea {
     background-repeat: no-repeat;
     background-position: center;
   }
+  main .btn-area .btn-block .btn-step-r {
+    float: right;
+  }
+  main .btn-area .btn-block .btn-step-l {
+    float: left;
+  }
+  main .btn-area .btn-block .btn-step-l a p {
+    margin: 0 0 0 65px;
+  }
+  main .btn-area .btn-block .btn-step-l a::after {
+    background-image: url(../../uploads/2020/07/icon-arrow-blue-l.png);
+  }
+  main .pc-column2-block ul li {
+    position: relative;
+    margin: 0 80px 90px 0;
+    padding: 25px 20px;
+  }
+  main .pc-column2-block ul li .inner-box {
+    max-width: 436px;
+  }
+  main .pc-column2-block ul li .inner-box .img-box {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto 30px;
+  }
+  main .pc-column2-block ul li .inner-box .txt-box {
+    width: 436px;
+    margin: 0 auto;
+  }
+  main .pc-column2-block ul li .inner-box .txt-box h4 {
+    font-size: 5.2rem;
+    margin: 0 0 25px 0;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+  main .pc-column2-block ul li .inner-box .txt-box p {
+    font-size: 2rem;
+    min-height: 74px;
+  }
+  main .pc-column2-block ul li .inner-box .btn-detail {
+    position: static;
+  }
+  main .pc-column2-block ul li .inner-box .btn-detail a {
+    position: relative;
+    width: 200px;
+    color: #ffffff;
+    font-size: 2rem;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 0 auto 10px;
+    line-height: 1;
+  }
+  main .pc-column2-block ul li .inner-box .btn-detail a::after {
+    top: 50%;
+    margin: -20px 0 0 0;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../uploads/2020/07/icon-arrow-blue@2x.png);
+    background-size: 40px;
+  }
+  main .pc-column2-block ul li:nth-of-type(2n) {
+    margin: 0 0 90px 0;
+  }
   .LinkIconArea {
     background-color: #f6f6f2;
+  }
+  .mt30 {
+    margin-top: 30px !important;
+  }
+  .mt120 {
+    margin-top: 120px !important;
   }
 }
