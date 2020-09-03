@@ -115,10 +115,7 @@ button.btn {
   font-family: Yu Gothic, Arial, Helvetica, sans-serif;
 }
 
-.singular .entry-header {
-  display: none;
-}
-
+.singular .entry-header,
 .primary-menu .icon {
   display: none;
 }
@@ -274,23 +271,20 @@ button.btn {
 
 .link-list-area .link-list-box ul li.bubble a:after {
   top: 4px;
-  width: 108px;
-  height: 90px;
-  background-image: url("http://gitdesigng.com/wp-content/uploads/2020/07/icon_bubble@2x.png");
+  width: 88px;
+  background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/icon_bubble@2x.png");
 }
 
 .link-list-area .link-list-box ul li.chain a:after {
-  width: 96px;
-  height: 86px;
-  top: 8px;
-  background-image: url("http://gitdesigng.com/wp-content/uploads/2020/07/icon_chain@2x.png");
+  width: 76px;
+  top: 6px;
+  background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/icon_chain@2x.png");
 }
 
 .link-list-area .link-list-box ul li.share a:after {
-  width: 106px;
-  height: 77px;
-  top: 10px;
-  background-image: url("http://gitdesigng.com/wp-content/uploads/2020/07/icon_share@2x.png");
+  width: 86px;
+  top: 6px;
+  background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/icon_share@2x.png");
 }
 
 #site-content {
@@ -539,7 +533,7 @@ main .contents-area .process-block ul li p {
 main .contents-area .process-block ul li .img-box {
   width: 400px;
   height: auto;
-  margin: 0 0 40px 0;
+  margin: 0 auto 40px;
 }
 
 main .contents-area .process-block ul li .btn-detail a {
@@ -942,7 +936,7 @@ main .contents-area .case-box dl.attention-box dt {
   margin-bottom: 15px;
   color: #F074A2;
   font-size: 1.9rem;
-  background: url(http://gitdesigng.com/wp-content/uploads/2020/08/bg_attention.png) no-repeat left;
+  background: url(http://bp.bell-face.co/wp-content/uploads/2020/08/bg_attention.png) no-repeat left;
 }
 
 main .contents-area .case-box dl.attention-box dd {
@@ -1198,7 +1192,7 @@ dl dd p.movie-text {
   text-align: center !important;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .pc-only {
     display: block;
   }
@@ -1237,7 +1231,7 @@ dl dd p.movie-text {
   #site-header {
     height: 133px;
     width: 100%;
-    background-image: url("http://gitdesigng.com/wp-content/uploads/2020/07/bg_header_template.png");
+    background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/bg_header_template.png");
     background-repeat: repeat-x;
     background-size: 133px;
     max-width: 100%;
@@ -1267,14 +1261,24 @@ dl dd p.movie-text {
     margin: 0;
   }
   body:not(.overlay-header) .primary-menu > li > a,
-  body:not(.overlay-header) .primary-menu > li > .icon,
+  body:not(.overlay-header) .primary-menu > li > .icon {
+    color: #0065A9 !important;
+    font-family: Yu Gothic, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
   .modal-menu a,
   .footer-menu a,
   .footer-widgets a,
   #site-footer .wp-block-button.is-style-outline,
   .wp-block-pullquote:before,
   .singular:not(.overlay-header) .entry-header a,
-  .archive-header a,
+  .archive-header a {
+    color: #0065A9 !important;
+    font-family: Yu Gothic, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
   .header-footer-group .color-accent,
   .header-footer-group .color-accent-hover:hover {
     color: #0065A9 !important;
@@ -1310,6 +1314,7 @@ dl dd p.movie-text {
   }
   .link-list-area .link-list-box ul li a {
     position: relative;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 100px 18px 30px;
   }
@@ -1345,7 +1350,7 @@ dl dd p.movie-text {
   }
   main .top-area .img-box {
     margin: 0;
-    width: 40%;
+    width: 33%;
     max-width: 450px;
   }
   main .top-area .img-box + p {
@@ -1354,7 +1359,7 @@ dl dd p.movie-text {
     width: 61%;
     max-width: 726px;
     margin: 0;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: bold;
     letter-spacing: 1.3px;
     clear: both;
@@ -1365,12 +1370,12 @@ dl dd p.movie-text {
   }
   main .top-area .tag-category {
     padding: 15px;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0 0 22px 0;
   }
   main .top-area h2 {
     margin: 0;
-    font-size: 6.8rem;
+    font-size: 6.4rem;
   }
   main .contents-area {
     background: #ffffff;
@@ -1432,7 +1437,7 @@ dl dd p.movie-text {
     font-size: 1.8rem;
   }
   main .contents-area .index-box .index-block ol li span:first-of-type {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   main .contents-area .index-box ~ .h3-box {
     margin: 0 0 40px 0;
@@ -1447,10 +1452,13 @@ dl dd p.movie-text {
     margin: 0 0 82px 0;
   }
   main .contents-area p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  main .contents-area .h3-box {
+    margin: 0 0 40px 0;
   }
   main .contents-area .h3-box h3 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   main .contents-area .process-block ul li {
     position: relative;
@@ -1461,16 +1469,17 @@ dl dd p.movie-text {
     overflow: hidden;
   }
   main .contents-area .process-block ul li h4 {
-    font-size: 5.6rem;
+    font-size: 5.4rem;
     margin: 0 0 25px 0;
     line-height: 1.2;
   }
   main .contents-area .process-block ul li h4 span {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     letter-spacing: 1.3px;
   }
   main .contents-area .process-block ul li p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
   }
   main .contents-area .process-block ul li .img-box {
     width: 400px;
@@ -1590,7 +1599,7 @@ dl dd p.movie-text {
   }
   main .contents-area .case-box .customer-block h4.company-name + p {
     color: #0065A9;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     margin: 6px 0 0;
   }
   main .contents-area .case-box .tool-list li {
@@ -1807,5 +1816,17 @@ dl dd p.movie-text {
   }
   .mt120 {
     margin-top: 120px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1112px) {
+  main .top-area .text-box {
+    padding: 0 30px;
+  }
+  .pc-column2-block ul li {
+    margin: 0 auto 50px;
+  }
+  .pc-column2-block ul li:nth-of-type(2n) {
+    margin: 0 auto;
   }
 }
