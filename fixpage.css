@@ -243,6 +243,7 @@ button.btn {
   background: #ffffff;
   color: #0065A9;
   font-weight: bold;
+  text-align: center;
   padding: 100px 16px 30px;
   border-radius: 20px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -272,17 +273,20 @@ button.btn {
 .link-list-area .link-list-box ul li.bubble a:after {
   top: 4px;
   width: 88px;
+  height: 90px;
   background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/icon_bubble@2x.png");
 }
 
 .link-list-area .link-list-box ul li.chain a:after {
   width: 76px;
+  height: 90px;
   top: 6px;
   background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/icon_chain@2x.png");
 }
 
 .link-list-area .link-list-box ul li.share a:after {
   width: 86px;
+  height: 90px;
   top: 6px;
   background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/icon_share@2x.png");
 }
@@ -970,18 +974,46 @@ main .contents-area .example-block .example-text {
   text-align: left;
 }
 
-main .btn-area {
+main .contents-area a.link-img {
+  display: table;
+  width: 250px;
+  height: 150px;
+  margin: 0 50px;
+}
+
+main .contents-area a.link-bg-01, main .contents-area a.link-bg-02 {
+  background: url(../../uploads/2020/08/bg_pdf.png) no-repeat center;
+}
+
+main .contents-area a.link-img span.link-pdf-text {
+  display: none;
+}
+
+main .contents-area a.link-img:hover span.link-pdf-text {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  color: #0065A9;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+main .contents-area .btn-area {
   position: relative;
   padding: 0 0 60px;
   font-family: Yu Gothic, Arial, Helvetica, sans-serif;
 }
 
-main .btn-area a:hover {
+main .contents-area .btn-area a:hover {
   -webkit-transform: translate(0, 3px);
   transform: translate(0, 3px);
 }
 
-main .btn-area .btn-block {
+main .contents-area .btn-area .btn-block {
   position: relative;
   background: #fff;
   width: 100%;
@@ -995,11 +1027,11 @@ main .btn-area .btn-block {
   border-bottom-right-radius: 20px;
 }
 
-main .btn-area .btn-block .btn-next {
+main .contents-area .btn-area .btn-block .btn-next {
   position: relative;
 }
 
-main .btn-area .btn-block .btn-next .tag-next {
+main .contents-area .btn-area .btn-block .btn-next .tag-next {
   position: absolute;
   margin: 0 auto;
   top: -10px;
@@ -1020,7 +1052,7 @@ main .btn-area .btn-block .btn-next .tag-next {
   border-radius: 5px;
 }
 
-main .btn-area .btn-block .btn-next a {
+main .contents-area .btn-area .btn-block .btn-next a {
   position: relative;
   width: 94%;
   margin: 0 auto;
@@ -1036,21 +1068,21 @@ main .btn-area .btn-block .btn-next a {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-main .btn-area .btn-block .btn-next a .img-box {
+main .contents-area .btn-area .btn-block .btn-next a .img-box {
   display: none;
 }
 
-main .btn-area .btn-block .btn-next a .text-box {
+main .contents-area .btn-area .btn-block .btn-next a .text-box {
   width: calc(100% - 40px);
   margin: 0;
 }
 
-main .btn-area .btn-block .btn-next a .text-box .btn-txt {
+main .contents-area .btn-area .btn-block .btn-next a .text-box .btn-txt {
   font-size: 1rem;
   margin: 0 0 10px 0;
 }
 
-main .btn-area .btn-block .btn-next a .text-box .btn-title {
+main .contents-area .btn-area .btn-block .btn-next a .text-box .btn-title {
   font-size: 2rem;
   margin: 0;
   line-height: 1;
@@ -1059,13 +1091,13 @@ main .btn-area .btn-block .btn-next a .text-box .btn-title {
   text-overflow: ellipsis;
 }
 
-main .btn-area .btn-block .btn-next a .text-box .btn-title span {
+main .contents-area .btn-area .btn-block .btn-next a .text-box .btn-title span {
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 10px 0 0;
 }
 
-main .btn-area .btn-block .btn-next a::after {
+main .contents-area .btn-area .btn-block .btn-next a::after {
   display: block;
   content: "";
   position: absolute;
@@ -1084,49 +1116,50 @@ main .btn-area .btn-block .btn-next a::after {
   background-position: center;
 }
 
-main .btn-area .btn-block .btn-step {
+main .contents-area .btn-area .btn-block .btn-step-r,
+main .contents-area .btn-area .btn-block .btn-step-l {
   display: none;
 }
 
-main .pc-column2-block ul {
+main .contents-area .pc-column2-block ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-main .pc-column2-block ul li {
+main .contents-area .pc-column2-block ul li {
   position: relative;
   margin: 0 0 50px 0;
   padding: 30px;
   background-color: #F8FCFD;
 }
 
-main .pc-column2-block ul li .inner-box {
+main .contents-area .pc-column2-block ul li .inner-box {
   overflow: hidden;
 }
 
-main .pc-column2-block ul li .inner-box .img-box {
+main .contents-area .pc-column2-block ul li .inner-box .img-box {
   width: 100%;
   height: auto;
   margin: 0 0 40px 0;
   border-radius: 25px;
 }
 
-main .pc-column2-block ul li .inner-box .txt-box {
+main .contents-area .pc-column2-block ul li .inner-box .txt-box {
   text-align: center;
   margin: 0 0 30px 0;
 }
 
-main .pc-column2-block ul li .inner-box .txt-box h4 {
+main .contents-area .pc-column2-block ul li .inner-box .txt-box h4 {
   font-size: 3.4rem;
   color: #0065A9;
   margin: 0 0 10px 0;
 }
 
-main .pc-column2-block ul li .inner-box .txt-box p {
+main .contents-area .pc-column2-block ul li .inner-box .txt-box p {
   font-size: 1.4rem;
 }
 
-main .pc-column2-block ul li .inner-box .btn-detail a {
+main .contents-area .pc-column2-block ul li .inner-box .btn-detail a {
   position: relative;
   display: block;
   width: 160px;
@@ -1144,7 +1177,7 @@ main .pc-column2-block ul li .inner-box .btn-detail a {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-main .pc-column2-block ul li .inner-box .btn-detail a::before {
+main .contents-area .pc-column2-block ul li .inner-box .btn-detail a::before {
   content: '';
   width: 12px;
   height: 12px;
@@ -1159,76 +1192,108 @@ main .pc-column2-block ul li .inner-box .btn-detail a::before {
   transform: rotate(45deg);
 }
 
-main .pc-column2-block ul li .inner-box .btn-detail a:hover {
+main .contents-area .pc-column2-block ul li .inner-box .btn-detail a:hover {
   -webkit-transform: translate(0, 3px);
   transform: translate(0, 3px);
 }
 
-main .pc-column2-block ul li:last-of-type {
+main .contents-area .pc-column2-block ul li:last-of-type {
   margin: 0;
 }
 
-main .pc-column2-block ul li:last-of-type::after {
+main .contents-area .pc-column2-block ul li:last-of-type::after {
   content: none;
 }
 
-main .LinkIconArea {
+main .contents-area .LinkIconArea {
   background-color: #ffffff;
 }
 
-dl dd p.movie-text {
+main dl dd p.movie-text {
   font-weight: normal;
 }
 
-.mt30 {
+main .mt30 {
   margin-top: 10px !important;
 }
 
-.mt120 {
+main .mt120 {
   margin-top: 70px !important;
 }
 
-.tc {
+main .tc {
   text-align: center !important;
 }
 
+main main .contents-area a.link-img {
+  display: table;
+  width: 250px;
+  height: 150px;
+  margin: 0 50px;
+}
+
+main main .contents-area a.link-bg-01 {
+  background: url(../../uploads/2020/08/bg_pdf.png) no-repeat center;
+}
+
+main main .contents-area a.link-bg-02 {
+  background: url(../../uploads/2020/08/bg_pdf.png) no-repeat center;
+}
+
+main main .contents-area a.link-img span.link-pdf-text {
+  display: none;
+}
+
+main main .contents-area a.link-img:hover span.link-pdf-text {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  color: #0065A9;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
 @media screen and (min-width: 767px) {
-  .pc-only {
+  main .pc-only {
     display: block;
   }
-  .sp-only {
+  main .sp-only {
     display: none;
   }
-  .left-block {
+  main .left-block {
     float: left;
   }
-  .right-block {
+  main .right-block {
     float: right;
   }
-  .btn-return {
+  main .btn-return {
     width: 195px;
   }
-  .btn-return a {
+  main .btn-return a {
     font-size: 1.8rem;
   }
-  .btn-return a::before {
+  main .btn-return a::before {
     height: 48px;
   }
-  .btn-return a span {
+  main .btn-return a span {
     line-height: 1.5;
   }
-  .btn-return a span::before {
+  main .btn-return a span::before {
     left: 36px;
     top: 22.2px;
     width: 15px;
   }
-  .btn-return a span::after {
+  main .btn-return a span::after {
     left: 36px;
     top: 18px;
     width: 11px;
     height: 11px;
   }
-  #site-header {
+  main #site-header {
     height: 133px;
     width: 100%;
     background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/bg_header_template.png");
@@ -1236,89 +1301,89 @@ dl dd p.movie-text {
     background-size: 133px;
     max-width: 100%;
   }
-  #site-content {
+  main #site-content {
     padding: 0;
   }
-  .header-inner {
+  main .header-inner {
     left: 0;
     right: 0;
   }
-  .site-title a {
+  main .site-title a {
     font-size: 1.6rem;
   }
-  ul.primary-menu {
+  main ul.primary-menu {
     display: table;
     width: 840px;
   }
-  ul.primary-menu > li {
+  main ul.primary-menu > li {
     margin: 0 34px 0 0;
     width: 70px;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
   }
-  ul.primary-menu > li:last-of-type {
+  main ul.primary-menu > li:last-of-type {
     margin: 0;
   }
-  body:not(.overlay-header) .primary-menu > li > a,
-  body:not(.overlay-header) .primary-menu > li > .icon {
+  main body:not(.overlay-header) .primary-menu > li > a,
+  main body:not(.overlay-header) .primary-menu > li > .icon {
     color: #0065A9 !important;
     font-family: Yu Gothic, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
   }
-  .modal-menu a,
-  .footer-menu a,
-  .footer-widgets a,
-  #site-footer .wp-block-button.is-style-outline,
-  .wp-block-pullquote:before,
-  .singular:not(.overlay-header) .entry-header a,
-  .archive-header a {
+  main .modal-menu a,
+  main .footer-menu a,
+  main .footer-widgets a,
+  main #site-footer .wp-block-button.is-style-outline,
+  main .wp-block-pullquote:before,
+  main .singular:not(.overlay-header) .entry-header a,
+  main .archive-header a {
     color: #0065A9 !important;
     font-family: Yu Gothic, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
   }
-  .header-footer-group .color-accent,
-  .header-footer-group .color-accent-hover:hover {
+  main .header-footer-group .color-accent,
+  main .header-footer-group .color-accent-hover:hover {
     color: #0065A9 !important;
     font-family: Yu Gothic, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
   }
-  .header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
+  main .header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
     content: none;
   }
-  .toggle-text {
+  main .toggle-text {
     display: none;
   }
-  .link-list-area {
+  main .link-list-area {
     width: 1200px;
     padding: 0 0 80px 0;
   }
-  .link-list-area .link-list-box {
+  main .link-list-area .link-list-box {
     width: 1040px;
     margin: 0 auto 80px;
     padding: 50px 40px;
   }
-  .link-list-area .link-list-box ul {
+  main .link-list-area .link-list-box ul {
     margin: 0;
     text-align: center;
   }
-  .link-list-area .link-list-box ul li {
+  main .link-list-area .link-list-box ul li {
     display: inline-block;
     width: 265px;
     margin: 0 75px 0 0;
     font-size: 2rem;
     text-align: center;
   }
-  .link-list-area .link-list-box ul li a {
+  main .link-list-area .link-list-box ul li a {
     position: relative;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 100px 18px 30px;
   }
-  .link-list-area .link-list-box ul li a:after {
+  main .link-list-area .link-list-box ul li a:after {
     left: 0;
     right: 0;
     width: 108px;
@@ -1328,76 +1393,75 @@ dl dd p.movie-text {
     background-repeat: no-repeat;
     margin: 0 auto;
   }
-  main {
+  main main {
     margin: 0;
   }
-  main section {
+  main main section {
     width: 1200px !important;
     margin: 0 auto !important;
     padding: 0;
   }
-  main .top-area {
+  main main .top-area {
     display: flex;
     margin: 0 auto 60px !important;
     padding: 0;
   }
-  main .top-area::after {
+  main main .top-area::after {
     content: none;
   }
-  main .top-area .text-box {
+  main main .top-area .text-box {
     position: relative;
     width: 1200px;
   }
-  main .top-area .img-box {
+  main main .top-area .img-box {
     margin: 0;
-    width: 33%;
-    max-width: 450px;
+    width: 43%;
+    max-width: 390px;
   }
-  main .top-area .img-box + p {
-    position: absolute;
-    top: 214px;
-    width: 61%;
+  main main .top-area .img-box + p {
+    width: 52%;
+    min-width: 400px;
     max-width: 726px;
-    margin: 0;
+    margin: 50px 0 0;
     font-size: 2.2rem;
     font-weight: bold;
     letter-spacing: 1.3px;
     clear: both;
   }
-  main .top-area .img-box.pattern4-top {
+  main main .top-area .img-box.pattern4-top {
     width: 272px;
     height: 350px;
   }
-  main .top-area .tag-category {
+  main main .top-area .tag-category {
     padding: 15px;
     font-size: 2.6rem;
     margin: 0 0 22px 0;
   }
-  main .top-area h2 {
+  main main .top-area h2 {
     margin: 0;
     font-size: 6.4rem;
   }
-  main .contents-area {
+  main main .contents-area {
     background: #ffffff;
     width: 1200px;
     margin: 0 auto;
     padding: 45px 80px 80px;
   }
-  main .contents-area .movie-box {
+  main main .contents-area .movie-box {
     width: 750px;
   }
-  main .contents-area .movie-box iframe {
+  main main .contents-area .movie-box iframe {
     height: auto;
     margin: 0 auto 28px;
   }
-  main .contents-area .movie-box p {
+  main main .contents-area .movie-box p {
     margin: 0 0 30px 0;
   }
-  main .contents-area .movie-box ul {
+  main main .contents-area .movie-box ul {
     padding: 25px;
     background: #f8fcfd;
   }
-  main .contents-area .movie-box ul li {
+  main main .contents-area .movie-box ul li {
     position: relative;
     margin: 0 0 10px 0;
     padding: 0 0 0 35px;
@@ -1405,15 +1469,15 @@ dl dd p.movie-text {
     font-size: 1.6rem;
     max-width: 700px;
   }
-  main .contents-area .movie-box ul li:last-of-type {
+  main main .contents-area .movie-box ul li:last-of-type {
     margin: 0;
   }
-  main .contents-area .movie-box ul li span {
+  main main .contents-area .movie-box ul li span {
     display: inline-block;
     width: 100px;
     font-weight: normal;
   }
-  main .contents-area .movie-box ul li::after {
+  main main .contents-area .movie-box ul li::after {
     position: absolute;
     display: block;
     content: "";
@@ -1424,73 +1488,73 @@ dl dd p.movie-text {
     border-radius: 50%;
     background-color: #0065a9;
   }
-  main .contents-area nav ul li {
+  main main .contents-area nav ul li {
     font-size: 1.4rem;
   }
-  main .contents-area .index-box .index-title {
+  main main .contents-area .index-box .index-title {
     color: #333333;
     font-size: 2.4rem;
     font-weight: bold;
     margin: 0 0 10px 0;
   }
-  main .contents-area .index-box .index-block ol li {
+  main main .contents-area .index-box .index-block ol li {
     font-size: 1.8rem;
   }
-  main .contents-area .index-box .index-block ol li span:first-of-type {
+  main main .contents-area .index-box .index-block ol li span:first-of-type {
     font-size: 2.5rem;
   }
-  main .contents-area .index-box ~ .h3-box {
+  main main .contents-area .index-box ~ .h3-box {
     margin: 0 0 40px 0;
   }
-  main .contents-area .index-box ~ .h3-box h3 {
+  main main .contents-area .index-box ~ .h3-box h3 {
     font-size: 3.4rem;
   }
-  main .contents-area .index-box ~ .h3-box h3 span {
+  main main .contents-area .index-box ~ .h3-box h3 span {
     margin: 0 16px 0 0;
   }
-  main .contents-area .index-box ~ .h3-box h3 + p {
+  main main .contents-area .index-box ~ .h3-box h3 + p {
     margin: 0 0 82px 0;
   }
-  main .contents-area p {
+  main main .contents-area p {
     font-size: 1.8rem;
   }
-  main .contents-area .h3-box {
+  main main .contents-area .h3-box {
     margin: 0 0 40px 0;
   }
-  main .contents-area .h3-box h3 {
+  main main .contents-area .h3-box h3 {
     font-size: 2.6rem;
   }
-  main .contents-area .process-block ul li {
+  main main .contents-area .process-block ul li {
     position: relative;
     margin: 0 0 90px 0;
     padding: 40px 46px;
   }
-  main .contents-area .process-block ul li .inner-box {
+  main main .contents-area .process-block ul li .inner-box {
     overflow: hidden;
   }
-  main .contents-area .process-block ul li h4 {
+  main main .contents-area .process-block ul li h4 {
     font-size: 5.4rem;
     margin: 0 0 25px 0;
     line-height: 1.2;
   }
-  main .contents-area .process-block ul li h4 span {
+  main main .contents-area .process-block ul li h4 span {
     font-size: 2.4rem;
     letter-spacing: 1.3px;
   }
-  main .contents-area .process-block ul li p {
+  main main .contents-area .process-block ul li p {
     font-size: 1.8rem;
     font-weight: bold;
   }
-  main .contents-area .process-block ul li .img-box {
+  main main .contents-area .process-block ul li .img-box {
     width: 400px;
     height: 300px;
     margin: 0;
   }
-  main .contents-area .process-block ul li .btn-detail {
+  main main .contents-area .process-block ul li .btn-detail {
     position: absolute;
     bottom: 40px;
   }
-  main .contents-area .process-block ul li .btn-detail a {
+  main main .contents-area .process-block ul li .btn-detail a {
     position: relative;
     width: 200px;
     color: #ffffff;
@@ -1501,7 +1565,7 @@ dl dd p.movie-text {
     padding: 15px 30px;
     line-height: 1;
   }
-  main .contents-area .process-block ul li .btn-detail a::after {
+  main main .contents-area .process-block ul li .btn-detail a::after {
     top: 50%;
     margin: -20px 0 0 0;
     right: 24px;
@@ -1510,113 +1574,114 @@ dl dd p.movie-text {
     background-image: url(../../uploads/2020/07/icon-arrow-blue@2x.png);
     background-size: 40px;
   }
-  main .contents-area .process-block ul li::after {
+  main main .contents-area .process-block ul li::after {
     bottom: -60px;
     border-width: 27px 42px 0 42px;
   }
-  main .contents-area .list-block h4 {
+  main main .contents-area .list-block h4 {
     font-size: 3.4rem;
     margin: 0 0 50px 0;
   }
-  main .contents-area .list-block dl dt {
+  main main .contents-area .list-block dl dt {
     font-size: 2.6rem;
     margin: 0 0 30px 0;
   }
-  main .contents-area .list-block dl dd ul li {
+  main main .contents-area .list-block dl dd ul li {
     clear: both;
     overflow: hidden;
     margin: 0 0 30px 0;
   }
-  main .contents-area .list-block dl dd ul li .img-box {
+  main main .contents-area .list-block dl dd ul li .img-box {
     width: 300px;
     height: 225px;
     float: left;
     margin: 0;
   }
-  main .contents-area .list-block dl dd ul li .text-box {
+  main main .contents-area .list-block dl dd ul li .text-box {
     width: calc(100% - 330px);
     float: left;
     margin: 0 0 0 30px;
   }
-  main .contents-area .list-block dl dd ul li .text-box dt {
+  main main .contents-area .list-block dl dd ul li .text-box dt {
     font-size: 2.4rem;
     margin: 0 0 10px 0;
   }
-  main .contents-area .list-block dl dd ul li .text-box dd {
+  main main .contents-area .list-block dl dd ul li .text-box dd {
     font-size: 2rem;
     font-weight: normal;
   }
-  main .contents-area .case-box {
+  main main .contents-area .case-box {
     margin: 0 0 120px 0;
   }
-  main .contents-area .case-box dt {
+  main main .contents-area .case-box dt {
     font-size: 3rem;
     margin: 0 0 50px 0;
     line-height: 1;
   }
-  main .contents-area .case-box dt span {
+  main main .contents-area .case-box dt span {
     font-size: 2rem;
   }
-  main .contents-area .case-box .img-box {
-    width: 717px;
+  main main .contents-area .case-box .img-box {
+    width: 100%;
+    max-width: 717px;
   }
-  main .contents-area .case-box .customer-block a {
+  main main .contents-area .case-box .customer-block a {
     display: table;
     width: 1040px;
     border-radius: 25px;
     padding: 10px 50px 10px 10px;
   }
-  main .contents-area .case-box .customer-block a:hover {
+  main main .contents-area .case-box .customer-block a:hover {
     -webkit-transform: translate(0, 3px);
     transform: translate(0, 3px);
   }
-  main .contents-area .case-box .customer-block a:hover::before {
+  main main .contents-area .case-box .customer-block a:hover::before {
     bottom: 3px;
   }
-  main .contents-area .case-box .customer-block .img-box {
+  main main .contents-area .case-box .customer-block .img-box {
     display: table-cell;
     width: 230px;
     margin: 0;
     line-height: 0;
   }
-  main .contents-area .case-box .customer-block .img-box img {
+  main main .contents-area .case-box .customer-block .img-box img {
     width: 230px;
     height: 170px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
   }
-  main .contents-area .case-box .customer-block .text-box {
+  main main .contents-area .case-box .customer-block .text-box {
     display: table-cell;
     width: 795px;
     padding: 0 0 0 45px;
     vertical-align: middle;
   }
-  main .contents-area .case-box .customer-block h4.company-name {
+  main main .contents-area .case-box .customer-block h4.company-name {
     font-size: 1.8rem;
     font-weight: bold;
     margin: 0;
   }
-  main .contents-area .case-box .customer-block h4.company-name + p {
+  main main .contents-area .case-box .customer-block h4.company-name + p {
     color: #0065A9;
     font-size: 1.8rem;
     margin: 6px 0 0;
   }
-  main .contents-area .case-box .tool-list li {
+  main main .contents-area .case-box .tool-list li {
     width: 290px;
     margin: 0 75px 0 0;
     float: left;
   }
-  main .contents-area.sav-taitle {
+  main main .contents-area.sav-taitle {
     font-size: 3.4rem;
     margin: 0 0 50px 0;
   }
-  main .contents-area .example-block .example-text {
+  main main .contents-area .example-block .example-text {
     padding: 70px 110px;
     width: 750px;
     font-size: 1.7rem;
   }
-  main .btn-area {
+  main main .btn-area {
     width: 1200px;
     background: #fff;
     -moz-border-bottom-left-radius: 20px;
@@ -1626,13 +1691,13 @@ dl dd p.movie-text {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-  main .btn-area .btn-block {
+  main main .btn-area .btn-block {
     width: 950px;
   }
-  main .btn-area .btn-block .btn-next {
+  main main .btn-area .btn-block .btn-next {
     margin: 0 auto 20px;
   }
-  main .btn-area .btn-block .btn-next .tag-next {
+  main main .btn-area .btn-block .btn-next .tag-next {
     top: -20px;
     width: 200px;
     padding: 10px 0;
@@ -1642,17 +1707,17 @@ dl dd p.movie-text {
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
-  main .btn-area .btn-block .btn-next a {
+  main main .btn-area .btn-block .btn-next a {
     display: table;
     width: 950px;
     padding: 40px 140px 40px 30px;
   }
-  main .btn-area .btn-block .btn-next a .img-box {
+  main main .btn-area .btn-block .btn-next a .img-box {
     display: table-cell;
     vertical-align: middle;
     float: none;
   }
-  main .btn-area .btn-block .btn-next a .img-box img {
+  main main .btn-area .btn-block .btn-next a .img-box img {
     background: #ffffff;
     width: 120px;
     height: 120px;
@@ -1661,28 +1726,28 @@ dl dd p.movie-text {
     -webkit-border-radius: 50%;
     border-radius: 50%;
   }
-  main .btn-area .btn-block .btn-next a .text-box {
+  main main .btn-area .btn-block .btn-next a .text-box {
     display: table-cell;
     margin: 0 0 0 60px;
     width: 570px;
     max-width: 570px;
   }
-  main .btn-area .btn-block .btn-next a .text-box .btn-txt {
+  main main .btn-area .btn-block .btn-next a .text-box .btn-txt {
     font-size: 1.8rem;
     margin: 0 0 40px 0;
   }
-  main .btn-area .btn-block .btn-next a .text-box .btn-title {
+  main main .btn-area .btn-block .btn-next a .text-box .btn-title {
     font-size: 4.5rem;
     margin: 0;
     line-height: 1;
   }
-  main .btn-area .btn-block .btn-next a .text-box .btn-title span {
+  main main .btn-area .btn-block .btn-next a .text-box .btn-title span {
     display: inline-block;
     font-size: 2.4rem;
     margin: 0 20px 0 0;
     vertical-align: middle;
   }
-  main .btn-area .btn-block .btn-next a::after {
+  main main .btn-area .btn-block .btn-next a::after {
     margin: -48px 0 0;
     right: 32px;
     width: 96px;
@@ -1690,13 +1755,13 @@ dl dd p.movie-text {
     background-size: 40px;
     border: #ffffff 5px solid;
   }
-  main .btn-area .btn-block .btn-step-r,
-  main .btn-area .btn-block .btn-step-l {
+  main main .btn-area .btn-block .btn-step-r,
+  main main .btn-area .btn-block .btn-step-l {
     display: block;
     margin: 0;
   }
-  main .btn-area .btn-block .btn-step-r a,
-  main .btn-area .btn-block .btn-step-l a {
+  main main .btn-area .btn-block .btn-step-r a,
+  main main .btn-area .btn-block .btn-step-l a {
     position: relative;
     display: block;
     width: 320px;
@@ -1711,20 +1776,20 @@ dl dd p.movie-text {
     line-height: 1;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   }
-  main .btn-area .btn-block .btn-step-r a p,
-  main .btn-area .btn-block .btn-step-l a p {
+  main main .btn-area .btn-block .btn-step-r a p,
+  main main .btn-area .btn-block .btn-step-l a p {
     width: 230px;
     margin: 0;
     line-height: 1.3;
   }
-  main .btn-area .btn-block .btn-step-r a span,
-  main .btn-area .btn-block .btn-step-l a span {
+  main main .btn-area .btn-block .btn-step-r a span,
+  main main .btn-area .btn-block .btn-step-l a span {
     display: block;
     font-size: 1.4rem;
     letter-spacing: 2.1px;
   }
-  main .btn-area .btn-block .btn-step-r a::after,
-  main .btn-area .btn-block .btn-step-l a::after {
+  main main .btn-area .btn-block .btn-step-r a::after,
+  main main .btn-area .btn-block .btn-step-l a::after {
     display: block;
     content: "";
     position: absolute;
@@ -1742,49 +1807,49 @@ dl dd p.movie-text {
     background-repeat: no-repeat;
     background-position: center;
   }
-  main .btn-area .btn-block .btn-step-r {
+  main main .btn-area .btn-block .btn-step-r {
     float: right;
   }
-  main .btn-area .btn-block .btn-step-l {
+  main main .btn-area .btn-block .btn-step-l {
     float: left;
   }
-  main .btn-area .btn-block .btn-step-l a p {
+  main main .btn-area .btn-block .btn-step-l a p {
     margin: 0 0 0 65px;
   }
-  main .btn-area .btn-block .btn-step-l a::after {
+  main main .btn-area .btn-block .btn-step-l a::after {
     background-image: url(../../uploads/2020/07/icon-arrow-blue-l.png);
   }
-  main .pc-column2-block ul li {
+  main main .pc-column2-block ul li {
     position: relative;
     margin: 0 80px 90px 0;
     padding: 25px 20px;
   }
-  main .pc-column2-block ul li .inner-box {
+  main main .pc-column2-block ul li .inner-box {
     max-width: 436px;
   }
-  main .pc-column2-block ul li .inner-box .img-box {
+  main main .pc-column2-block ul li .inner-box .img-box {
     width: 400px;
     height: 300px;
     margin: 0 auto 30px;
   }
-  main .pc-column2-block ul li .inner-box .txt-box {
+  main main .pc-column2-block ul li .inner-box .txt-box {
     width: 436px;
     margin: 0 auto;
   }
-  main .pc-column2-block ul li .inner-box .txt-box h4 {
+  main main .pc-column2-block ul li .inner-box .txt-box h4 {
     font-size: 5.2rem;
     margin: 0 0 25px 0;
     line-height: 1.2;
     letter-spacing: 0;
   }
-  main .pc-column2-block ul li .inner-box .txt-box p {
+  main main .pc-column2-block ul li .inner-box .txt-box p {
     font-size: 2rem;
     min-height: 74px;
   }
-  main .pc-column2-block ul li .inner-box .btn-detail {
+  main main .pc-column2-block ul li .inner-box .btn-detail {
     position: static;
   }
-  main .pc-column2-block ul li .inner-box .btn-detail a {
+  main main .pc-column2-block ul li .inner-box .btn-detail a {
     position: relative;
     width: 200px;
     color: #ffffff;
@@ -1796,7 +1861,7 @@ dl dd p.movie-text {
     margin: 0 auto 10px;
     line-height: 1;
   }
-  main .pc-column2-block ul li .inner-box .btn-detail a::after {
+  main main .pc-column2-block ul li .inner-box .btn-detail a::after {
     top: 50%;
     margin: -20px 0 0 0;
     right: 24px;
@@ -1805,28 +1870,125 @@ dl dd p.movie-text {
     background-image: url(../../uploads/2020/07/icon-arrow-blue@2x.png);
     background-size: 40px;
   }
-  main .pc-column2-block ul li:nth-of-type(2n) {
+  main main .pc-column2-block ul li:nth-of-type(2n) {
     margin: 0 0 90px 0;
   }
-  .LinkIconArea {
+  main .LinkIconArea {
     background-color: #f6f6f2;
   }
-  .mt30 {
+  main .mt30 {
     margin-top: 30px !important;
   }
-  .mt120 {
+  main .mt120 {
     margin-top: 120px !important;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1112px) {
-  main .top-area .text-box {
+@media screen and (min-width: 768px) and (max-width: 1192px) {
+  main main .top-area .text-box {
     padding: 0 30px;
   }
-  .pc-column2-block ul li {
+  main main .pc-column2-block ul li {
     margin: 0 auto 50px;
   }
-  .pc-column2-block ul li:nth-of-type(2n) {
+  main main .pc-column2-block ul li:nth-of-type(2n) {
     margin: 0 auto;
+  }
+  main .link-list-area .link-list-box {
+    width: 100%;
+    padding: 50px 10px;
+  }
+  main .link-list-area .link-list-box ul li {
+    display: inline-block;
+    width: 30%;
+    min-width: 210px;
+    max-width: 265px;
+    margin: 0 3% 0 0;
+  }
+}
+
+@media screen and (max-width: 879px) {
+  main .process-block ul li {
+    position: relative;
+    margin: 0 0 90px 0;
+    padding: 30px;
+    background-color: #F8FCFD;
+  }
+  main .process-block ul li .inner-box {
+    overflow: hidden;
+  }
+  main .process-block ul li h4 {
+    font-size: 3.4rem;
+    color: #333333;
+    margin: 0 0 25px 0;
+  }
+  main .process-block ul li h4 span {
+    display: block;
+    font-size: 1.6rem;
+    color: #0065A9;
+    letter-spacing: 1.3px;
+  }
+  main .process-block ul li p {
+    font-size: 1.4rem;
+  }
+  main .process-block ul li .img-box {
+    width: 400px;
+    height: auto;
+    margin: 0 auto 40px;
+  }
+  main .process-block ul li .btn-detail a {
+    position: relative;
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    background: #0065a9;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Yu Gothic, Arial, Helvetica, sans-serif;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding: 15px 25px;
+    line-height: 1;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  main .process-block ul li .btn-detail a::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: 0;
+    border-top: solid 4px #ffffff;
+    border-right: solid 4px #ffffff;
+    border-radius: 1px;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    margin-top: -6px;
+    transform: rotate(45deg);
+  }
+  main .process-block ul li .btn-detail a:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+  }
+  main .process-block ul li::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 27px 42px 0 42px;
+    border-color: #f6ea46 transparent transparent transparent;
+  }
+  main .process-block ul li:last-of-type {
+    margin: 0;
+  }
+  main .process-block ul li:last-of-type::after {
+    content: none;
   }
 }
