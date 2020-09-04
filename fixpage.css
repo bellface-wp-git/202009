@@ -1225,75 +1225,43 @@ main .tc {
   text-align: center !important;
 }
 
-main main .contents-area a.link-img {
-  display: table;
-  width: 250px;
-  height: 150px;
-  margin: 0 50px;
-}
-
-main main .contents-area a.link-bg-01 {
-  background: url(../../uploads/2020/08/bg_pdf.png) no-repeat center;
-}
-
-main main .contents-area a.link-bg-02 {
-  background: url(../../uploads/2020/08/bg_pdf.png) no-repeat center;
-}
-
-main main .contents-area a.link-img span.link-pdf-text {
-  display: none;
-}
-
-main main .contents-area a.link-img:hover span.link-pdf-text {
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-  color: #0065A9;
-  font-size: 1.7rem;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-  vertical-align: middle;
-  background-color: rgba(0, 0, 0, 0.08);
-}
-
 @media screen and (min-width: 767px) {
-  main .pc-only {
+  .pc-only {
     display: block;
   }
-  main .sp-only {
+  .sp-only {
     display: none;
   }
-  main .left-block {
+  .left-block {
     float: left;
   }
-  main .right-block {
+  .right-block {
     float: right;
   }
-  main .btn-return {
+  .btn-return {
     width: 195px;
   }
-  main .btn-return a {
+  .btn-return a {
     font-size: 1.8rem;
   }
-  main .btn-return a::before {
+  .btn-return a::before {
     height: 48px;
   }
-  main .btn-return a span {
+  .btn-return a span {
     line-height: 1.5;
   }
-  main .btn-return a span::before {
+  .btn-return a span::before {
     left: 36px;
     top: 22.2px;
     width: 15px;
   }
-  main .btn-return a span::after {
+  .btn-return a span::after {
     left: 36px;
     top: 18px;
     width: 11px;
     height: 11px;
   }
-  main #site-header {
+  #site-header {
     height: 133px;
     width: 100%;
     background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/bg_header_template.png");
@@ -1301,89 +1269,89 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     background-size: 133px;
     max-width: 100%;
   }
-  main #site-content {
+  #site-content {
     padding: 0;
   }
-  main .header-inner {
+  .header-inner {
     left: 0;
     right: 0;
   }
-  main .site-title a {
+  .site-title a {
     font-size: 1.6rem;
   }
-  main ul.primary-menu {
+  ul.primary-menu {
     display: table;
     width: 840px;
   }
-  main ul.primary-menu > li {
+  ul.primary-menu > li {
     margin: 0 34px 0 0;
     width: 70px;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
   }
-  main ul.primary-menu > li:last-of-type {
+  ul.primary-menu > li:last-of-type {
     margin: 0;
   }
-  main body:not(.overlay-header) .primary-menu > li > a,
-  main body:not(.overlay-header) .primary-menu > li > .icon {
+  body:not(.overlay-header) .primary-menu > li > a,
+  body:not(.overlay-header) .primary-menu > li > .icon {
     color: #0065A9 !important;
     font-family: Yu Gothic, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
   }
-  main .modal-menu a,
-  main .footer-menu a,
-  main .footer-widgets a,
-  main #site-footer .wp-block-button.is-style-outline,
-  main .wp-block-pullquote:before,
-  main .singular:not(.overlay-header) .entry-header a,
-  main .archive-header a {
+  .modal-menu a,
+  .footer-menu a,
+  .footer-widgets a,
+  #site-footer .wp-block-button.is-style-outline,
+  .wp-block-pullquote:before,
+  .singular:not(.overlay-header) .entry-header a,
+  .archive-header a {
     color: #0065A9 !important;
     font-family: Yu Gothic, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
   }
-  main .header-footer-group .color-accent,
-  main .header-footer-group .color-accent-hover:hover {
+  .header-footer-group .color-accent,
+  .header-footer-group .color-accent-hover:hover {
     color: #0065A9 !important;
     font-family: Yu Gothic, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
   }
-  main .header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
+  .header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
     content: none;
   }
-  main .toggle-text {
+  .toggle-text {
     display: none;
   }
-  main .link-list-area {
+  .link-list-area {
     width: 1200px;
     padding: 0 0 80px 0;
   }
-  main .link-list-area .link-list-box {
+  .link-list-area .link-list-box {
     width: 1040px;
     margin: 0 auto 80px;
     padding: 50px 40px;
   }
-  main .link-list-area .link-list-box ul {
+  .link-list-area .link-list-box ul {
     margin: 0;
     text-align: center;
   }
-  main .link-list-area .link-list-box ul li {
+  .link-list-area .link-list-box ul li {
     display: inline-block;
     width: 265px;
     margin: 0 75px 0 0;
     font-size: 2rem;
     text-align: center;
   }
-  main .link-list-area .link-list-box ul li a {
+  .link-list-area .link-list-box ul li a {
     position: relative;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 100px 18px 30px;
   }
-  main .link-list-area .link-list-box ul li a:after {
+  .link-list-area .link-list-box ul li a:after {
     left: 0;
     right: 0;
     width: 108px;
@@ -1393,32 +1361,32 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     background-repeat: no-repeat;
     margin: 0 auto;
   }
-  main main {
+  main {
     margin: 0;
   }
-  main main section {
+  main section {
     width: 1200px !important;
     margin: 0 auto !important;
     padding: 0;
   }
-  main main .top-area {
+  main .top-area {
     display: flex;
     margin: 0 auto 60px !important;
     padding: 0;
   }
-  main main .top-area::after {
+  main .top-area::after {
     content: none;
   }
-  main main .top-area .text-box {
+  main .top-area .text-box {
     position: relative;
     width: 1200px;
   }
-  main main .top-area .img-box {
+  main .top-area .img-box {
     margin: 0;
     width: 43%;
     max-width: 390px;
   }
-  main main .top-area .img-box + p {
+  main .top-area .img-box + p {
     width: 52%;
     min-width: 400px;
     max-width: 726px;
@@ -1428,40 +1396,40 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     letter-spacing: 1.3px;
     clear: both;
   }
-  main main .top-area .img-box.pattern4-top {
+  main .top-area .img-box.pattern4-top {
     width: 272px;
     height: 350px;
   }
-  main main .top-area .tag-category {
+  main .top-area .tag-category {
     padding: 15px;
     font-size: 2.6rem;
     margin: 0 0 22px 0;
   }
-  main main .top-area h2 {
+  main .top-area h2 {
     margin: 0;
     font-size: 6.4rem;
   }
-  main main .contents-area {
+  main .contents-area {
     background: #ffffff;
     width: 1200px;
     margin: 0 auto;
     padding: 45px 80px 80px;
   }
-  main main .contents-area .movie-box {
+  main .contents-area .movie-box {
     width: 750px;
   }
-  main main .contents-area .movie-box iframe {
+  main .contents-area .movie-box iframe {
     height: auto;
     margin: 0 auto 28px;
   }
-  main main .contents-area .movie-box p {
+  main .contents-area .movie-box p {
     margin: 0 0 30px 0;
   }
-  main main .contents-area .movie-box ul {
+  main .contents-area .movie-box ul {
     padding: 25px;
     background: #f8fcfd;
   }
-  main main .contents-area .movie-box ul li {
+  main .contents-area .movie-box ul li {
     position: relative;
     margin: 0 0 10px 0;
     padding: 0 0 0 35px;
@@ -1469,15 +1437,15 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     font-size: 1.6rem;
     max-width: 700px;
   }
-  main main .contents-area .movie-box ul li:last-of-type {
+  main .contents-area .movie-box ul li:last-of-type {
     margin: 0;
   }
-  main main .contents-area .movie-box ul li span {
+  main .contents-area .movie-box ul li span {
     display: inline-block;
     width: 100px;
     font-weight: normal;
   }
-  main main .contents-area .movie-box ul li::after {
+  main .contents-area .movie-box ul li::after {
     position: absolute;
     display: block;
     content: "";
@@ -1488,73 +1456,73 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     border-radius: 50%;
     background-color: #0065a9;
   }
-  main main .contents-area nav ul li {
+  main .contents-area nav ul li {
     font-size: 1.4rem;
   }
-  main main .contents-area .index-box .index-title {
+  main .contents-area .index-box .index-title {
     color: #333333;
     font-size: 2.4rem;
     font-weight: bold;
     margin: 0 0 10px 0;
   }
-  main main .contents-area .index-box .index-block ol li {
+  main .contents-area .index-box .index-block ol li {
     font-size: 1.8rem;
   }
-  main main .contents-area .index-box .index-block ol li span:first-of-type {
+  main .contents-area .index-box .index-block ol li span:first-of-type {
     font-size: 2.5rem;
   }
-  main main .contents-area .index-box ~ .h3-box {
+  main .contents-area .index-box ~ .h3-box {
     margin: 0 0 40px 0;
   }
-  main main .contents-area .index-box ~ .h3-box h3 {
+  main .contents-area .index-box ~ .h3-box h3 {
     font-size: 3.4rem;
   }
-  main main .contents-area .index-box ~ .h3-box h3 span {
+  main .contents-area .index-box ~ .h3-box h3 span {
     margin: 0 16px 0 0;
   }
-  main main .contents-area .index-box ~ .h3-box h3 + p {
+  main .contents-area .index-box ~ .h3-box h3 + p {
     margin: 0 0 82px 0;
   }
-  main main .contents-area p {
+  main .contents-area p {
     font-size: 1.8rem;
   }
-  main main .contents-area .h3-box {
+  main .contents-area .h3-box {
     margin: 0 0 40px 0;
   }
-  main main .contents-area .h3-box h3 {
+  main .contents-area .h3-box h3 {
     font-size: 2.6rem;
   }
-  main main .contents-area .process-block ul li {
+  main .contents-area .process-block ul li {
     position: relative;
     margin: 0 0 90px 0;
     padding: 40px 46px;
   }
-  main main .contents-area .process-block ul li .inner-box {
+  main .contents-area .process-block ul li .inner-box {
     overflow: hidden;
   }
-  main main .contents-area .process-block ul li h4 {
+  main .contents-area .process-block ul li h4 {
     font-size: 5.4rem;
     margin: 0 0 25px 0;
     line-height: 1.2;
   }
-  main main .contents-area .process-block ul li h4 span {
+  main .contents-area .process-block ul li h4 span {
     font-size: 2.4rem;
     letter-spacing: 1.3px;
   }
-  main main .contents-area .process-block ul li p {
+  main .contents-area .process-block ul li p {
     font-size: 1.8rem;
     font-weight: bold;
   }
-  main main .contents-area .process-block ul li .img-box {
+  main .contents-area .process-block ul li .img-box {
     width: 400px;
     height: 300px;
     margin: 0;
   }
-  main main .contents-area .process-block ul li .btn-detail {
+  main .contents-area .process-block ul li .btn-detail {
     position: absolute;
     bottom: 40px;
   }
-  main main .contents-area .process-block ul li .btn-detail a {
+  main .contents-area .process-block ul li .btn-detail a {
     position: relative;
     width: 200px;
     color: #ffffff;
@@ -1565,7 +1533,7 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     padding: 15px 30px;
     line-height: 1;
   }
-  main main .contents-area .process-block ul li .btn-detail a::after {
+  main .contents-area .process-block ul li .btn-detail a::after {
     top: 50%;
     margin: -20px 0 0 0;
     right: 24px;
@@ -1574,114 +1542,114 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     background-image: url(../../uploads/2020/07/icon-arrow-blue@2x.png);
     background-size: 40px;
   }
-  main main .contents-area .process-block ul li::after {
+  main .contents-area .process-block ul li::after {
     bottom: -60px;
     border-width: 27px 42px 0 42px;
   }
-  main main .contents-area .list-block h4 {
+  main .contents-area .list-block h4 {
     font-size: 3.4rem;
     margin: 0 0 50px 0;
   }
-  main main .contents-area .list-block dl dt {
+  main .contents-area .list-block dl dt {
     font-size: 2.6rem;
     margin: 0 0 30px 0;
   }
-  main main .contents-area .list-block dl dd ul li {
+  main .contents-area .list-block dl dd ul li {
     clear: both;
     overflow: hidden;
     margin: 0 0 30px 0;
   }
-  main main .contents-area .list-block dl dd ul li .img-box {
+  main .contents-area .list-block dl dd ul li .img-box {
     width: 300px;
     height: 225px;
     float: left;
     margin: 0;
   }
-  main main .contents-area .list-block dl dd ul li .text-box {
+  main .contents-area .list-block dl dd ul li .text-box {
     width: calc(100% - 330px);
     float: left;
     margin: 0 0 0 30px;
   }
-  main main .contents-area .list-block dl dd ul li .text-box dt {
+  main .contents-area .list-block dl dd ul li .text-box dt {
     font-size: 2.4rem;
     margin: 0 0 10px 0;
   }
-  main main .contents-area .list-block dl dd ul li .text-box dd {
+  main .contents-area .list-block dl dd ul li .text-box dd {
     font-size: 2rem;
     font-weight: normal;
   }
-  main main .contents-area .case-box {
+  main .contents-area .case-box {
     margin: 0 0 120px 0;
   }
-  main main .contents-area .case-box dt {
+  main .contents-area .case-box dt {
     font-size: 3rem;
     margin: 0 0 50px 0;
     line-height: 1;
   }
-  main main .contents-area .case-box dt span {
+  main .contents-area .case-box dt span {
     font-size: 2rem;
   }
-  main main .contents-area .case-box .img-box {
+  main .contents-area .case-box .img-box {
     width: 100%;
     max-width: 717px;
   }
-  main main .contents-area .case-box .customer-block a {
+  main .contents-area .case-box .customer-block a {
     display: table;
     width: 1040px;
     border-radius: 25px;
     padding: 10px 50px 10px 10px;
   }
-  main main .contents-area .case-box .customer-block a:hover {
+  main .contents-area .case-box .customer-block a:hover {
     -webkit-transform: translate(0, 3px);
     transform: translate(0, 3px);
   }
-  main main .contents-area .case-box .customer-block a:hover::before {
+  main .contents-area .case-box .customer-block a:hover::before {
     bottom: 3px;
   }
-  main main .contents-area .case-box .customer-block .img-box {
+  main .contents-area .case-box .customer-block .img-box {
     display: table-cell;
     width: 230px;
     margin: 0;
     line-height: 0;
   }
-  main main .contents-area .case-box .customer-block .img-box img {
+  main .contents-area .case-box .customer-block .img-box img {
     width: 230px;
     height: 170px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
   }
-  main main .contents-area .case-box .customer-block .text-box {
+  main .contents-area .case-box .customer-block .text-box {
     display: table-cell;
     width: 795px;
     padding: 0 0 0 45px;
     vertical-align: middle;
   }
-  main main .contents-area .case-box .customer-block h4.company-name {
+  main .contents-area .case-box .customer-block h4.company-name {
     font-size: 1.8rem;
     font-weight: bold;
     margin: 0;
   }
-  main main .contents-area .case-box .customer-block h4.company-name + p {
+  main .contents-area .case-box .customer-block h4.company-name + p {
     color: #0065A9;
     font-size: 1.8rem;
     margin: 6px 0 0;
   }
-  main main .contents-area .case-box .tool-list li {
+  main .contents-area .case-box .tool-list li {
     width: 290px;
     margin: 0 75px 0 0;
     float: left;
   }
-  main main .contents-area.sav-taitle {
+  main .contents-area.sav-taitle {
     font-size: 3.4rem;
     margin: 0 0 50px 0;
   }
-  main main .contents-area .example-block .example-text {
+  main .contents-area .example-block .example-text {
     padding: 70px 110px;
     width: 750px;
     font-size: 1.7rem;
   }
-  main main .btn-area {
+  main .btn-area {
     width: 1200px;
     background: #fff;
     -moz-border-bottom-left-radius: 20px;
@@ -1691,13 +1659,13 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-  main main .btn-area .btn-block {
+  main .btn-area .btn-block {
     width: 950px;
   }
-  main main .btn-area .btn-block .btn-next {
+  main .btn-area .btn-block .btn-next {
     margin: 0 auto 20px;
   }
-  main main .btn-area .btn-block .btn-next .tag-next {
+  main .btn-area .btn-block .btn-next .tag-next {
     top: -20px;
     width: 200px;
     padding: 10px 0;
@@ -1707,17 +1675,17 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
-  main main .btn-area .btn-block .btn-next a {
+  main .btn-area .btn-block .btn-next a {
     display: table;
     width: 950px;
     padding: 40px 140px 40px 30px;
   }
-  main main .btn-area .btn-block .btn-next a .img-box {
+  main .btn-area .btn-block .btn-next a .img-box {
     display: table-cell;
     vertical-align: middle;
     float: none;
   }
-  main main .btn-area .btn-block .btn-next a .img-box img {
+  main .btn-area .btn-block .btn-next a .img-box img {
     background: #ffffff;
     width: 120px;
     height: 120px;
@@ -1726,28 +1694,28 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     -webkit-border-radius: 50%;
     border-radius: 50%;
   }
-  main main .btn-area .btn-block .btn-next a .text-box {
+  main .btn-area .btn-block .btn-next a .text-box {
     display: table-cell;
     margin: 0 0 0 60px;
     width: 570px;
     max-width: 570px;
   }
-  main main .btn-area .btn-block .btn-next a .text-box .btn-txt {
+  main .btn-area .btn-block .btn-next a .text-box .btn-txt {
     font-size: 1.8rem;
     margin: 0 0 40px 0;
   }
-  main main .btn-area .btn-block .btn-next a .text-box .btn-title {
+  main .btn-area .btn-block .btn-next a .text-box .btn-title {
     font-size: 4.5rem;
     margin: 0;
     line-height: 1;
   }
-  main main .btn-area .btn-block .btn-next a .text-box .btn-title span {
+  main .btn-area .btn-block .btn-next a .text-box .btn-title span {
     display: inline-block;
     font-size: 2.4rem;
     margin: 0 20px 0 0;
     vertical-align: middle;
   }
-  main main .btn-area .btn-block .btn-next a::after {
+  main .btn-area .btn-block .btn-next a::after {
     margin: -48px 0 0;
     right: 32px;
     width: 96px;
@@ -1755,13 +1723,13 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     background-size: 40px;
     border: #ffffff 5px solid;
   }
-  main main .btn-area .btn-block .btn-step-r,
-  main main .btn-area .btn-block .btn-step-l {
+  main .btn-area .btn-block .btn-step-r,
+  main .btn-area .btn-block .btn-step-l {
     display: block;
     margin: 0;
   }
-  main main .btn-area .btn-block .btn-step-r a,
-  main main .btn-area .btn-block .btn-step-l a {
+  main .btn-area .btn-block .btn-step-r a,
+  main .btn-area .btn-block .btn-step-l a {
     position: relative;
     display: block;
     width: 320px;
@@ -1776,20 +1744,20 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     line-height: 1;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   }
-  main main .btn-area .btn-block .btn-step-r a p,
-  main main .btn-area .btn-block .btn-step-l a p {
+  main .btn-area .btn-block .btn-step-r a p,
+  main .btn-area .btn-block .btn-step-l a p {
     width: 230px;
     margin: 0;
     line-height: 1.3;
   }
-  main main .btn-area .btn-block .btn-step-r a span,
-  main main .btn-area .btn-block .btn-step-l a span {
+  main .btn-area .btn-block .btn-step-r a span,
+  main .btn-area .btn-block .btn-step-l a span {
     display: block;
     font-size: 1.4rem;
     letter-spacing: 2.1px;
   }
-  main main .btn-area .btn-block .btn-step-r a::after,
-  main main .btn-area .btn-block .btn-step-l a::after {
+  main .btn-area .btn-block .btn-step-r a::after,
+  main .btn-area .btn-block .btn-step-l a::after {
     display: block;
     content: "";
     position: absolute;
@@ -1807,49 +1775,49 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     background-repeat: no-repeat;
     background-position: center;
   }
-  main main .btn-area .btn-block .btn-step-r {
+  main .btn-area .btn-block .btn-step-r {
     float: right;
   }
-  main main .btn-area .btn-block .btn-step-l {
+  main .btn-area .btn-block .btn-step-l {
     float: left;
   }
-  main main .btn-area .btn-block .btn-step-l a p {
+  main .btn-area .btn-block .btn-step-l a p {
     margin: 0 0 0 65px;
   }
-  main main .btn-area .btn-block .btn-step-l a::after {
+  main .btn-area .btn-block .btn-step-l a::after {
     background-image: url(../../uploads/2020/07/icon-arrow-blue-l.png);
   }
-  main main .pc-column2-block ul li {
+  main .pc-column2-block ul li {
     position: relative;
     margin: 0 80px 90px 0;
     padding: 25px 20px;
   }
-  main main .pc-column2-block ul li .inner-box {
+  main .pc-column2-block ul li .inner-box {
     max-width: 436px;
   }
-  main main .pc-column2-block ul li .inner-box .img-box {
+  main .pc-column2-block ul li .inner-box .img-box {
     width: 400px;
     height: 300px;
     margin: 0 auto 30px;
   }
-  main main .pc-column2-block ul li .inner-box .txt-box {
+  main .pc-column2-block ul li .inner-box .txt-box {
     width: 436px;
     margin: 0 auto;
   }
-  main main .pc-column2-block ul li .inner-box .txt-box h4 {
+  main .pc-column2-block ul li .inner-box .txt-box h4 {
     font-size: 5.2rem;
     margin: 0 0 25px 0;
     line-height: 1.2;
     letter-spacing: 0;
   }
-  main main .pc-column2-block ul li .inner-box .txt-box p {
+  main .pc-column2-block ul li .inner-box .txt-box p {
     font-size: 2rem;
     min-height: 74px;
   }
-  main main .pc-column2-block ul li .inner-box .btn-detail {
+  main .pc-column2-block ul li .inner-box .btn-detail {
     position: static;
   }
-  main main .pc-column2-block ul li .inner-box .btn-detail a {
+  main .pc-column2-block ul li .inner-box .btn-detail a {
     position: relative;
     width: 200px;
     color: #ffffff;
@@ -1861,7 +1829,7 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     margin: 0 auto 10px;
     line-height: 1;
   }
-  main main .pc-column2-block ul li .inner-box .btn-detail a::after {
+  main .pc-column2-block ul li .inner-box .btn-detail a::after {
     top: 50%;
     margin: -20px 0 0 0;
     right: 24px;
@@ -1870,35 +1838,35 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     background-image: url(../../uploads/2020/07/icon-arrow-blue@2x.png);
     background-size: 40px;
   }
-  main main .pc-column2-block ul li:nth-of-type(2n) {
+  main .pc-column2-block ul li:nth-of-type(2n) {
     margin: 0 0 90px 0;
   }
-  main .LinkIconArea {
+  .LinkIconArea {
     background-color: #f6f6f2;
   }
-  main .mt30 {
+  .mt30 {
     margin-top: 30px !important;
   }
-  main .mt120 {
+  .mt120 {
     margin-top: 120px !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1192px) {
-  main main .top-area .text-box {
+  main .top-area .text-box {
     padding: 0 30px;
   }
-  main main .pc-column2-block ul li {
+  main .pc-column2-block ul li {
     margin: 0 auto 50px;
   }
-  main main .pc-column2-block ul li:nth-of-type(2n) {
+  main .pc-column2-block ul li:nth-of-type(2n) {
     margin: 0 auto;
   }
-  main .link-list-area .link-list-box {
+  .link-list-area .link-list-box {
     width: 100%;
     padding: 50px 10px;
   }
-  main .link-list-area .link-list-box ul li {
+  .link-list-area .link-list-box ul li {
     display: inline-block;
     width: 30%;
     min-width: 210px;
@@ -1908,35 +1876,35 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
 }
 
 @media screen and (max-width: 879px) {
-  main .process-block ul li {
+  .process-block ul li {
     position: relative;
     margin: 0 0 90px 0;
     padding: 30px;
     background-color: #F8FCFD;
   }
-  main .process-block ul li .inner-box {
+  .process-block ul li .inner-box {
     overflow: hidden;
   }
-  main .process-block ul li h4 {
+  .process-block ul li h4 {
     font-size: 3.4rem;
     color: #333333;
     margin: 0 0 25px 0;
   }
-  main .process-block ul li h4 span {
+  .process-block ul li h4 span {
     display: block;
     font-size: 1.6rem;
     color: #0065A9;
     letter-spacing: 1.3px;
   }
-  main .process-block ul li p {
+  .process-block ul li p {
     font-size: 1.4rem;
   }
-  main .process-block ul li .img-box {
+  .process-block ul li .img-box {
     width: 400px;
     height: auto;
     margin: 0 auto 40px;
   }
-  main .process-block ul li .btn-detail a {
+  .process-block ul li .btn-detail a {
     position: relative;
     display: block;
     width: 160px;
@@ -1953,7 +1921,7 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     line-height: 1;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   }
-  main .process-block ul li .btn-detail a::before {
+  .process-block ul li .btn-detail a::before {
     content: '';
     width: 12px;
     height: 12px;
@@ -1967,11 +1935,11 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     margin-top: -6px;
     transform: rotate(45deg);
   }
-  main .process-block ul li .btn-detail a:hover {
+  .process-block ul li .btn-detail a:hover {
     -webkit-transform: translate(0, 3px);
     transform: translate(0, 3px);
   }
-  main .process-block ul li::after {
+  .process-block ul li::after {
     display: block;
     content: "";
     position: absolute;
@@ -1985,10 +1953,10 @@ main main .contents-area a.link-img:hover span.link-pdf-text {
     border-width: 27px 42px 0 42px;
     border-color: #f6ea46 transparent transparent transparent;
   }
-  main .process-block ul li:last-of-type {
+  .process-block ul li:last-of-type {
     margin: 0;
   }
-  main .process-block ul li:last-of-type::after {
+  .process-block ul li:last-of-type::after {
     content: none;
   }
 }
