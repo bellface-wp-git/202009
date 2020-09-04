@@ -1347,7 +1347,7 @@ main .tc {
   }
   .link-list-area .link-list-box ul li a {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: bold;
     padding: 100px 18px 30px;
   }
@@ -1388,13 +1388,14 @@ main .tc {
   }
   main .top-area .img-box + p {
     width: 52%;
+    position: relative;
     min-width: 400px;
     max-width: 726px;
-    margin: 50px 0 0;
+    margin: 0;
     font-size: 2.2rem;
     font-weight: bold;
     letter-spacing: 1.3px;
-    clear: both;
+    float: left;
   }
   main .top-area .img-box.pattern4-top {
     width: 272px;
@@ -1406,7 +1407,7 @@ main .tc {
     margin: 0 0 22px 0;
   }
   main .top-area h2 {
-    margin: 0;
+    margin: 0 0 50px;
     font-size: 6.4rem;
   }
   main .contents-area {
