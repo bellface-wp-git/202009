@@ -243,7 +243,6 @@ button.btn {
   background: #ffffff;
   color: #0065a9;
   font-weight: bold;
-  text-align: center;
   padding: 100px 16px 30px;
   border-radius: 20px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -289,6 +288,13 @@ button.btn {
   height: 90px;
   top: 6px;
   background-image: url("../../wp-content/uploads/2020/07/icon_share@2x.png");
+}
+
+.link-list-area .link-list-box ul li.eduation a:after {
+  width: 86px;
+  height: 90px;
+  top: 6px;
+  background-image: url("../../../wp-content/uploads/2020/07/icon_eduation@2x.png");
 }
 
 #site-content {
@@ -445,11 +451,21 @@ main .contents-area .index-box .index-block ol li span {
 
 main .contents-area .index-box .index-block ol li span:first-of-type {
   display: block;
+  width: 25px;
   margin-right: 10px;
   line-height: 1;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
+}
+
+main .contents-area .index-box .index-block ol li a {
+  display: block;
+  color: #0065a9;
+}
+
+main .contents-area .index-box .index-block ol li a:visited {
+  color: #0065a9;
 }
 
 main .contents-area .index-box .index-block ol li:last-of-type {
@@ -461,6 +477,7 @@ main .contents-area .index-box ~ .h3-box {
 }
 
 main .contents-area .index-box ~ .h3-box h3 {
+  display: table;
   font-size: 2rem;
   border-bottom: 5px solid #0065a9;
   padding: 0 0 10px 0;
@@ -469,11 +486,20 @@ main .contents-area .index-box ~ .h3-box h3 {
 }
 
 main .contents-area .index-box ~ .h3-box h3 span {
+  display: table-cell;
   margin: 0 10px 0 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main .contents-area .index-box ~ .h3-box h3 span:first-of-type {
+  width: 30px;
+}
+
 main .contents-area .index-box ~ .h3-box h3 + p {
+  text-align: left;
+}
+
+main .contents-area .index-box ~ .h3-box .case-box + p {
   text-align: left;
 }
 
@@ -1281,19 +1307,61 @@ main .btn-area .btn-block .btn-step-3 > div a::after {
   background-position: center;
 }
 
-main dl dd p.movie-text {
+.finish-area {
+  padding: 0 0 60px;
+  text-align: center;
+  color: #0065a9;
+  font-weight: bold;
+  background: #fff;
+}
+
+.finish-area .thanks-txt {
+  position: relative;
+  display: inline-block;
+  padding: 0 45px;
+}
+
+.finish-area .thanks-txt:before,
+.finish-area .thanks-txt:after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  display: inline-block;
+  width: 26px;
+  height: 2px;
+  background-color: #0065a9;
+}
+
+.finish-area .thanks-txt:before {
+  left: 16px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.finish-area .thanks-txt:after {
+  right: 16px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.finish-area .btn-return {
+  width: auto;
+  display: inline-block;
+}
+
+dl dd p.movie-text {
   font-weight: normal;
 }
 
-main .mt30 {
+.mt30 {
   margin-top: 10px !important;
 }
 
-main .mt120 {
+.mt120 {
   margin-top: 70px !important;
 }
 
-main .tc {
+.tc {
   text-align: center !important;
 }
 
@@ -1321,14 +1389,15 @@ main .tc {
   }
   .btn-return a span {
     line-height: 1.5;
+    padding: 10px 20px 10px 50px;
   }
   .btn-return a span::before {
-    left: 36px;
+    left: 26px;
     top: 22.2px;
     width: 15px;
   }
   .btn-return a span::after {
-    left: 36px;
+    left: 26px;
     top: 18px;
     width: 11px;
     height: 11px;
@@ -1336,7 +1405,7 @@ main .tc {
   #site-header {
     height: 133px;
     width: 100%;
-    background-image: url("http://bp.bell-face.co/wp-content/uploads/2020/07/bg_header_template.png");
+    background-image: url("../../wp-content/uploads/2020/07/bg_header_template.png");
     background-repeat: repeat-x;
     background-size: 133px;
     max-width: 100%;
@@ -1548,16 +1617,23 @@ main .tc {
     font-size: 1.8rem;
   }
   main .contents-area .index-box .index-block ol li span:first-of-type {
+    width: 30px;
     font-size: 2.5rem;
   }
   main .contents-area .index-box ~ .h3-box {
     margin: 0 0 40px 0;
   }
   main .contents-area .index-box ~ .h3-box h3 {
+    display: table;
+    width: 100%;
     font-size: 3.4rem;
   }
   main .contents-area .index-box ~ .h3-box h3 span {
+    display: table-cell;
     margin: 0 16px 0 0;
+  }
+  main .contents-area .index-box ~ .h3-box h3 span:first-of-type {
+    width: 50px;
   }
   main .contents-area .index-box ~ .h3-box h3 + p {
     margin: 0 0 82px 0;
@@ -1570,6 +1646,12 @@ main .tc {
   }
   main .contents-area .h3-box h3 {
     font-size: 2.6rem;
+  }
+  main .contents-area .h3-box .case-box {
+    margin: 0 auto;
+  }
+  main .contents-area .h3-box p {
+    text-align: left;
   }
   main .contents-area .process-block ul li {
     position: relative;
