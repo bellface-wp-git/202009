@@ -121,14 +121,15 @@ button.btn {
 }
 
 .btn-return {
-  width: 120px;
-  margin: 0 auto;
+  width: auto;
+  display: block;
+  text-align: center;
   z-index: 0;
 }
 
 .btn-return a {
   position: relative;
-  display: block;
+  display: inline-block;
   border-radius: 30px;
   padding: 6px 0;
   text-align: center;
@@ -269,25 +270,32 @@ button.btn {
   bottom: 3px;
 }
 
+.link-list-area .link-list-box ul li.community a:after {
+  top: 4px;
+  width: 88px;
+  height: 90px;
+  background-image: url("../../../wp-content/uploads/2020/07/icon_community@2x.png");
+}
+
 .link-list-area .link-list-box ul li.bubble a:after {
   top: 4px;
   width: 88px;
   height: 90px;
-  background-image: url("../../wp-content/uploads/2020/07/icon_bubble@2x.png");
+  background-image: url("../../../wp-content/uploads/2020/07/icon_bubble@2x.png");
 }
 
 .link-list-area .link-list-box ul li.chain a:after {
   width: 76px;
   height: 90px;
   top: 6px;
-  background-image: url("../../wp-content/uploads/2020/07/icon_chain@2x.png");
+  background-image: url("../../../wp-content/uploads/2020/07/icon_chain@2x.png");
 }
 
 .link-list-area .link-list-box ul li.share a:after {
   width: 86px;
   height: 90px;
   top: 6px;
-  background-image: url("../../wp-content/uploads/2020/07/icon_share@2x.png");
+  background-image: url("../../../wp-content/uploads/2020/07/icon_share@2x.png");
 }
 
 .link-list-area .link-list-box ul li.eduation a:after {
@@ -450,8 +458,7 @@ main .contents-area .index-box .index-block ol li span {
 }
 
 main .contents-area .index-box .index-block ol li span:first-of-type {
-  display: block;
-  width: 25px;
+  width: 30px;
   margin-right: 10px;
   line-height: 1;
   font-family: Arial, Helvetica, sans-serif;
@@ -477,6 +484,7 @@ main .contents-area .index-box ~ .h3-box {
 }
 
 main .contents-area .index-box ~ .h3-box h3 {
+  width: 100%;
   display: table;
   font-size: 2rem;
   border-bottom: 5px solid #0065a9;
@@ -501,6 +509,16 @@ main .contents-area .index-box ~ .h3-box h3 + p {
 
 main .contents-area .index-box ~ .h3-box .case-box + p {
   text-align: left;
+}
+
+main .contents-area .contents_link {
+  padding-top: 100px;
+  margin-top: -100px !important;
+}
+
+main .contents-area a.paragraph-link {
+  color: #949fa0;
+  text-decoration: underline;
 }
 
 main .contents-area p {
@@ -561,9 +579,20 @@ main .contents-area .process-block ul li p {
 }
 
 main .contents-area .process-block ul li .img-box {
-  width: 400px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   margin: 0 auto 40px;
+  padding: 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+main .contents-area .process-block ul li .img-box img {
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 200px;
 }
 
 main .contents-area .process-block ul li .btn-detail a {
@@ -773,7 +802,11 @@ main .contents-area .case-box .img-box + p {
   margin: 0 0 30px 0;
   font-weight: normal;
   color: #777777;
-  text-align: center;
+}
+
+main .contents-area .case-box .img-box + p a {
+  color: #0065a9;
+  text-decoration: underline;
 }
 
 main .contents-area .case-box .customer-block a {
@@ -1035,7 +1068,7 @@ main .contents-area .pc-column2-block ul {
 
 main .contents-area .pc-column2-block ul li {
   position: relative;
-  margin: 0 0 50px 0;
+  margin: 0 auto 50px;
   padding: 30px;
   background-color: #f8fcfd;
 }
@@ -1046,9 +1079,11 @@ main .contents-area .pc-column2-block ul li .inner-box {
 
 main .contents-area .pc-column2-block ul li .inner-box .img-box {
   width: 100%;
+  max-width: 300px;
   height: auto;
-  margin: 0 0 40px 0;
+  margin: 0 auto 40px;
   border-radius: 25px;
+  background: #ffffff;
 }
 
 main .contents-area .pc-column2-block ul li .inner-box .txt-box {
@@ -1307,6 +1342,34 @@ main .btn-area .btn-block .btn-step-3 > div a::after {
   background-position: center;
 }
 
+main ul.text-list {
+  list-style-type: disc !important;
+}
+
+main ul.text-list li {
+  position: relative;
+  margin: 0 0 12px 0;
+  padding: 0 0 0 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+main ul.text-list li::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: calc(50% - 4px);
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0065a9;
+}
+
 .finish-area {
   padding: 0 0 60px;
   text-align: center;
@@ -1344,11 +1407,6 @@ main .btn-area .btn-block .btn-step-3 > div a::after {
   transform: rotate(-45deg);
 }
 
-.finish-area .btn-return {
-  width: auto;
-  display: inline-block;
-}
-
 dl dd p.movie-text {
   font-weight: normal;
 }
@@ -1365,6 +1423,60 @@ dl dd p.movie-text {
   text-align: center !important;
 }
 
+.btn-link {
+  width: auto;
+  display: block;
+  text-align: center;
+  z-index: 0;
+}
+
+.btn-link a {
+  position: relative;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn-link a span {
+  position: relative;
+  display: block;
+  background: #f6f6f2;
+  padding: 10px 10px 10px 30px;
+  border-radius: 30px;
+  color: #0065a9;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.btn-link a:hover {
+  -webkit-transform: translate(0, 3px);
+  transform: translate(0, 3px);
+}
+
+.btn-link a:hover::before {
+  bottom: 3px;
+}
+
+.btn-link a::before {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 3px;
+  left: 2px;
+  width: 100%;
+  height: 36px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 30px;
+  background-image: -webkit-repeating-linear-gradient(135deg, #cbdbe8, #cbdbe8 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(-45deg, #cbdbe8, #cbdbe8 3px, transparent 2px, transparent 5px);
+  background-size: 7px 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 @media screen and (min-width: 767px) {
   .pc-only {
     display: block;
@@ -1379,7 +1491,9 @@ dl dd p.movie-text {
     float: right;
   }
   .btn-return {
-    width: 195px;
+    width: auto;
+    display: block;
+    text-align: center;
   }
   .btn-return a {
     font-size: 1.8rem;
@@ -1405,7 +1519,7 @@ dl dd p.movie-text {
   #site-header {
     height: 133px;
     width: 100%;
-    background-image: url("../../wp-content/uploads/2020/07/bg_header_template.png");
+    background-image: url("../../../wp-content/uploads/2020/07/bg_header_template.png");
     background-repeat: repeat-x;
     background-size: 133px;
     max-width: 100%;
@@ -1617,7 +1731,8 @@ dl dd p.movie-text {
     font-size: 1.8rem;
   }
   main .contents-area .index-box .index-block ol li span:first-of-type {
-    width: 30px;
+    display: table-cell;
+    width: 40px;
     font-size: 2.5rem;
   }
   main .contents-area .index-box ~ .h3-box {
@@ -1675,9 +1790,24 @@ dl dd p.movie-text {
     font-weight: bold;
   }
   main .contents-area .process-block ul li .img-box {
+    position: relative;
+    right: 0;
     width: 400px;
+    max-width: 400px;
     height: 300px;
     margin: 0;
+  }
+  main .contents-area .process-block ul li .img-box img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 250px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: translate(0, -50%);
   }
   main .contents-area .process-block ul li .btn-detail {
     position: absolute;
@@ -1831,9 +1961,21 @@ dl dd p.movie-text {
     max-width: 436px;
   }
   main .contents-area .pc-column2-block ul li .inner-box .img-box {
+    position: relative;
     width: 400px;
+    max-width: 400px;
     height: 300px;
     margin: 0 auto 30px;
+  }
+  main .contents-area .pc-column2-block ul li .inner-box .img-box img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   main .contents-area .pc-column2-block ul li .inner-box .txt-box {
     width: 436px;
@@ -2067,6 +2209,25 @@ dl dd p.movie-text {
   main .btn-area .btn-block .btn-step-3 > div:last-of-type {
     margin: 0;
   }
+  main ul.text-list li {
+    position: relative;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 35px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    max-width: 700px;
+  }
+  main ul.text-list li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: calc(50% - 5px);
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0065a9;
+  }
   .LinkIconArea {
     background-color: #f6f6f2;
   }
@@ -2076,6 +2237,25 @@ dl dd p.movie-text {
   .mt120 {
     margin-top: 120px !important;
   }
+}
+
+.btn-link {
+  width: auto;
+  display: block;
+  text-align: center;
+}
+
+.btn-link a {
+  font-size: 1.8rem;
+}
+
+.btn-link a::before {
+  height: 48px;
+}
+
+.btn-link a span {
+  line-height: 1.5;
+  padding: 10px 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1192px) {
@@ -2132,7 +2312,7 @@ dl dd p.movie-text {
     font-size: 1.4rem;
   }
   main .contents-area .process-block ul li .img-box {
-    width: 400px;
+    width: 250px;
     height: auto;
     margin: 0 auto 40px;
   }
