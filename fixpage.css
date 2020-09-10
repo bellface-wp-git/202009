@@ -516,11 +516,6 @@ main .contents-area .contents_link {
   margin-top: -100px !important;
 }
 
-main .contents-area a.paragraph-link {
-  color: #949fa0;
-  text-decoration: underline;
-}
-
 main .contents-area p {
   font-size: 1.4rem;
   color: #333333;
@@ -538,6 +533,11 @@ main .contents-area p.sav-taitle {
 main .contents-area p.small-taitle {
   font-size: 2.6rem;
   margin: 0 0 30px 0;
+}
+
+main .contents-area p a {
+  color: #0065a9;
+  text-decoration: underline;
 }
 
 main .contents-area .h3-box {
@@ -794,7 +794,6 @@ main .contents-area .case-box .img-box {
   width: 100%;
   height: auto;
   margin: 0 auto 30px;
-  background: #f6f6f2;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -802,11 +801,6 @@ main .contents-area .case-box .img-box + p {
   margin: 0 0 30px 0;
   font-weight: normal;
   color: #777777;
-}
-
-main .contents-area .case-box .img-box + p a {
-  color: #0065a9;
-  text-decoration: underline;
 }
 
 main .contents-area .case-box .customer-block a {
@@ -1411,6 +1405,11 @@ dl dd p.movie-text {
   font-weight: normal;
 }
 
+.paragraph-link {
+  color: #0065a9;
+  text-decoration: underline;
+}
+
 .mt30 {
   margin-top: 10px !important;
 }
@@ -1750,9 +1749,6 @@ dl dd p.movie-text {
   main .contents-area .index-box ~ .h3-box h3 span:first-of-type {
     width: 50px;
   }
-  main .contents-area .index-box ~ .h3-box h3 + p {
-    margin: 0 0 82px 0;
-  }
   main .contents-area p {
     font-size: 1.8rem;
   }
@@ -1898,7 +1894,8 @@ dl dd p.movie-text {
   }
   main .contents-area .case-box .customer-block a {
     display: table;
-    width: 1040px;
+    width: 100%;
+    max-width: 1040px;
     border-radius: 25px;
     padding: 10px 50px 10px 10px;
   }
@@ -1924,7 +1921,8 @@ dl dd p.movie-text {
   }
   main .contents-area .case-box .customer-block .text-box {
     display: table-cell;
-    width: 795px;
+    width: 80%;
+    max-width: 795px;
     padding: 0 0 0 45px;
     vertical-align: middle;
   }
@@ -2237,6 +2235,15 @@ dl dd p.movie-text {
   .mt120 {
     margin-top: 120px !important;
   }
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-list li:first-of-type {
+  margin-left: 0;
 }
 
 .btn-link {
