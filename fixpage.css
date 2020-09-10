@@ -797,7 +797,7 @@ main .contents-area .case-box .img-box {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-main .contents-area .case-box .img-box + p {
+main .contents-area .case-box .img-box ~ p {
   margin: 0 0 30px 0;
   font-weight: normal;
   color: #777777;
@@ -1474,6 +1474,14 @@ dl dd p.movie-text {
   background-size: 7px 7px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.fw-normal {
+  font-weight: normal !important;
+}
+
+main .contents-area .movie-box ul li.list-2line span.line2 {
+  display: none;
 }
 
 @media screen and (min-width: 767px) {
@@ -2235,34 +2243,42 @@ dl dd p.movie-text {
   .mt120 {
     margin-top: 120px !important;
   }
-}
-
-.btn-list {
-  display: flex;
-  justify-content: center;
-}
-
-.btn-list li:first-of-type {
-  margin-left: 0;
-}
-
-.btn-link {
-  width: auto;
-  display: block;
-  text-align: center;
-}
-
-.btn-link a {
-  font-size: 1.8rem;
-}
-
-.btn-link a::before {
-  height: 48px;
-}
-
-.btn-link a span {
-  line-height: 1.5;
-  padding: 10px 20px;
+  .fw-normal {
+    font-size: 1.8rem;
+  }
+  main .contents-area .movie-box ul li.list-2line::after {
+    top: calc(25% - 4px);
+  }
+  main .contents-area .movie-box ul li.list-2line span.line2 {
+    display: block;
+    padding-left: 113px;
+    width: 100%;
+    font-weight: bold;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+  }
+  .btn-list {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-list li:first-of-type {
+    margin-left: 0;
+  }
+  .btn-link {
+    width: auto;
+    display: block;
+    text-align: center;
+  }
+  .btn-link a {
+    font-size: 1.8rem;
+  }
+  .btn-link a::before {
+    height: 48px;
+  }
+  .btn-link a span {
+    line-height: 1.5;
+    padding: 10px 20px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1192px) {
