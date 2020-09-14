@@ -725,6 +725,10 @@ main .contents-area .movie-box iframe {
   margin: 0 0 15px 0;
 }
 
+main .contents-area .movie-box > div {
+  margin: 0 0 15px 0;
+}
+
 main .contents-area .movie-box p {
   margin: 0 0 10px 0;
   text-align: center;
@@ -794,7 +798,6 @@ main .contents-area .case-box .img-box {
   width: 100%;
   height: auto;
   margin: 0 auto 30px;
-  /*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);*/
 }
 
 main .contents-area .case-box .img-box ~ p {
@@ -1586,10 +1589,7 @@ main .contents-area .movie-box ul li.list-2line span.line2 {
     font-size: 12px;
     font-weight: bold;
   }
-  .header-inner
-.primary-menu-wrapper
-+ .header-toggles
-.toggle-wrapper:first-child::before {
+  .header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
     content: none;
   }
   .toggle-text {
@@ -2348,8 +2348,17 @@ main .contents-area .movie-box ul li.list-2line span.line2 {
   }
   main .contents-area .process-block ul li .img-box {
     width: 250px;
-    height: auto;
+    height: 100%;
+    min-height: 250px;
     margin: 0 auto 40px;
+  }
+  main .contents-area .process-block ul li .img-box img {
+    height: 100%;
+    max-width: auto;
+    max-height: 200px;
+  }
+  main .contents-area .process-block ul li .btn-detail {
+    bottom: 80px;
   }
   main .contents-area .process-block ul li .btn-detail a {
     position: relative;
@@ -2405,6 +2414,9 @@ main .contents-area .movie-box ul li.list-2line span.line2 {
   }
   main .contents-area .process-block ul li:last-of-type::after {
     content: none;
+  }
+  .left-block {
+    float: none;
   }
 }
 
