@@ -120,6 +120,11 @@ button.btn {
   display: none;
 }
 
+.fa,
+.fas {
+  margin: 0 0 0 10px;
+}
+
 .btn-return {
   width: auto;
   display: block;
@@ -1445,7 +1450,7 @@ dl dd p.movie-text {
   position: relative;
   display: block;
   background: #f6f6f2;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 20px;
   border-radius: 30px;
   color: #0065a9;
   font-weight: bold;
